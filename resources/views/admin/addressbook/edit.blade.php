@@ -24,7 +24,7 @@
                                 </ul>
                             @endif
                             <form action="{{route('addressbook.update', ['id'=>$address_books->id])}}" method="post" enctype="multipart/form-data">
-                                {{csrf_field()}}
+                                {{-- csrf_field() --}}
                                 <div class="form-group">
                                     <label for="name">Name</label>
                                     <input name="name" type="text"  class="form-control" value="{{$address_books->name}}">
